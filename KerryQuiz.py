@@ -5,12 +5,12 @@ numberOfGuesses = 1
 
 while capitalGuess != "Tralee":
     numberOfGuesses = numberOfGuesses + 1
-    if numberOfGuesses > 3:
+    if numberOfGuesses >= 3:
         print ("You guessed incorrectly 3 times. Game over, fool!")
         break
     capitalGuess = input ("Guess Again!   ")
     
-if numberOfGuesses <= 3:    
+if numberOfGuesses < 3:    
     if MF not in ["woman" , "lady" , "girl"]:
         print ("You guessed it. It took you " + str(numberOfGuesses) + " guesses. Take my upvote, good sir!")
     else:
